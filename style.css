@@ -87,6 +87,12 @@ form h1{
     font-size: x-large;
 }
 
+label {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+
 .tooltiptext{
     visibility: hidden;
     width: 120px;

@@ -1,0 +1,114 @@
+@font-face{
+    font-family: Norse-Bold;
+    src: url(../Sign-up_Form/font/Norse-Bold.otf);
+}
+
+:root{
+font-family: Norse-Bold, sans-serif;
+--stylez: 4px;
+--border: 1px solid rgb(136, 223, 136);
+--focused: 1px solid sienna;
+--hovering: 1px solid darkgreen;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 150px;
+  }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#backdrop{
+    background: url(./back_img.png);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    margin-top: 4px;
+    margin-bottom: 100px;
+    width: 50%;
+}
+
+#left{
+    background: transparent;
+    padding: 16px;
+}
+
+img[src]{
+    height: 200px;
+    width: 500px;
+}
+.heads{
+    margin-top: 100px;
+    color: white;
+}
+.info{
+    display: flex;
+    justify-content: start;
+    
+}
+.names input{
+    padding: 4px;
+    border-radius: var(--stylez);
+    border: var(--border);
+}
+.contacts input, select{
+    padding: 4px;
+    border-radius: var(--stylez);
+    border: var(--border);
+}
+.contacts{
+    margin-left: 30px;
+}
+
+.info input:focus{
+    border: var(--focused);
+}
+.info input:hover{
+    border: var(--hovering);
+}
+
+form h1{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,rgb(182, 168, 192),violet);
+}
+.p2{
+    margin-top: 15px;
+    font-size: x-large;
+}
+
+.tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    margin-left: 9px;
+    background-color:slategrey;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.group:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+
+
+
+

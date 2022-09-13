@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    
+
+        <div id="backdrop">
+            <div id="left"><div><img src="Kisite-img.jpeg" alt="Kisite Marine Park"></div>
+                <div class="heads"><h1>MARINE PARK</h1>
+                <h2>Welcome to Nature's Finest</h2>
+                </div>
+            </div>
+        
+            <form method="get">
+                <h1 class="intro">Holidays and Weekend Fun getaways with the Dolphins</h1>
+                <p>Boat Rides, sailing, Snorkeling, Deep-Sea Diving, Fishing, Islanding, Sea Food and Happy Memories</p>
+                <div class="info">
+                <div class="names">
+                    <div class="first">
+                    <label for="first_name">Full Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="John Doe" required>
+                    </div>
+                    <div class="mail">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="email" required pattern="(\w+@\D+\.\D+)" title="Please enter a valid Email." placeholder="Johndoe@xyz.com">
+                    </div>
+                    <div class="number">
+                        <label for="number">Phone number</label>
+                        <input type="text" id="number" name="phone number" pattern="((\+\d{3}\d)?\d{9})" title="Please enter a correct phone number" required>
+                    </div>
+                </div>
+                    <div class="contacts">
+                        <div class="group">
+                            <label for="Group_Numbers">Group Numbers</label>
+                            <input type="number" id="Group_Numbers" name="Group_Numbers" min="1" max="50">
+                            <span class="tooltiptext">Enter number of people to book for</span>
+                        </div>
+                        <div class="Adventure">
+                            <label for="Adventure">Select Adventure</label>
+                            <select name="Adventure" id="Adventure" multiple size="1">
+                                <option value="Boat Riding">Boat Riding</option>
+                                <option value="Snorkeling">Snorkeling</option>
+                                <option value="Sailing">Sailing</option>
+                                <option value="Deep sea diving">Deep sea diving</option>
+                                <option value="fishing">fishing</option>
+                                <option value="Island hoping">Island hoping</option>
+                                <option value="Sea Food">Sea Food</option>
+                            </select>
+                        </div>
+                        <div class="dateb">
+                            <div class="date">
+                            <label for="Date">Date</label>
+                            <input type="date" name="date" id="Date" required>
+                        </div>
+                        <div class="sub">
+                            <button type="submit">Book</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            <div class="bottom">
+            
+                <h2>Click <span><a href="#" style="color:rgb(238, 223, 91);">Here</a></span> to see reviews from previous Adventurers</h2>
+            </div>
+    </form>
+</div>
+</body>
+</html>
